@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PiggyVest</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="theme-white flex-center">
+	<div class="page">
+		<header class="header theme-white">
+			<div class="logo">
+				 <a href="#">
+				 	<img src="img/logo.png" alt="Piggyvest">
+				 </a>
+		    </div>
+		    <nav class="header__nav">
+		    	<ul class="header__ul text-blue">
+		    		<li class="header__item"><a href="#">About</a></li>
+		    		<li class="header__item"><a href="#">Stories</a></li>
+		    		<li class="header__item"><a href="#">FAQ</a></li>
+		    		<li class="header__item"><a href="#">Blog</a></li>
+		    		<li class="header__item"><a href="#">Log In</a></li>
+		    		<li class="header__item">
+		    			<button class="action-button text-blue">
+		    				<a href="#">Create a Free Account</a>
+		    			</button>
+		    		</li>
+		    	</ul>
+		    </nav>
+		</header>
+		<main>
+			<div class="section-invest">
+				<div class="section-invest__title-w-image">
+					<h2 class="section-invest__title title">
+						Estimate your investment growth over time
+					</h2>
+					<div class="section-invest__title-img">
+						<img src="img/New-homepage-6 1.png" alt="">
+					</div>
+				</div>
+					<div class="section-invest__form">
+						<form class="form" id="form">
+							<div class="form__item">
+								<label for="amount" class="form__title">
+									Amount to lock
+									<input id="amount" type="number" class="form__label" name="amount" placeholder="2500" required>
+								</label>
+							</div>
+							<div class="form__item">
+								<label for="period" class="form__title">
+									Duration
+									<select id="period" name="period" class="form__label">
+										<option disabled selected value>Select Duration of Lock</option>
+							            <option value="3">3 month</option>
+							            <option value="6">6 month</option>
+							            <option value="12">1 year</option>
+									</select>
+								</label>
+							</div>
+							<div class="form__item">
+								<label id="date-label" for="date" class="form__title">
+									Payback Date
+									<input type="date" class="form__label" placeholder="Select Date" id="myDate" value="">
+								</label>
+							</div>
+						</form>
+						<div class="section-invest__estimate-title">
+							<h4 class="section-invest__estimate-title text24 title">Estimated Balance</h4>
+							<p class="section-invest__text text36 title black" >NGN <output id="result">12,000</output></p>
+						</div>
+					</div>
+			</div>
+			<div class="section-how">
+				<h2 class="section-how__title title">
+					How does the calculator work
+				</h2>
+				<div class="section-how__safelock">
+					<div class="section-how__img">
+						<img src="img/New-homepage-5 1.png" alt="Piggyvest">
+					</div>
+					<div class="section-how__text-w-button">
+						<p class="section-how__text text24">Use our "SafeLock" feature to lock funds away so you don't have access until your set date. You also earn over 13% p.a.</p>
+						<button class="section-how__button action-button action-button-green">
+		    				<a href="#">Create a Free Account</a>
+		    			</button>
+					</div>
+				</div>
+			</div>
+			<div class="section-saved">
+				<h2 class="section-saved__title title">Over ₦1,000,000,000 securely saved every month</h2>
+				<p class="section-saved__text">PiggyVest uses bank-level security measures to keep your data safe.</p>
+				<p class="section-saved__text">PiggyVest users save & invest well over a billion every single month, and they are just getting started.</p>
+				<button class="section-how__button action-button action-button-blue">
+					<a href="#">Create Account for Free</a>
+				</button>
+				<div class="section-saved__mobile-apps">
+					<button class="section-saved__item">
+						<img src="img/iosbadge-101-image.png" alt="">
+					</button>
+					<button class="section-saved__item">
+						<img src="img/google-play-badge.png" alt="">
+					</button>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__section-footer">
+				<div class="footer__info">
+					<div class="footer__logo logo">
+						<a href="#">
+							<img src="img/logo.png" alt="Piggyvest">
+						</a>
+					</div>
+					<p class="footer__text-item1">PiggyVest (formerly piggybank.ng) is the largest online savings & investing platform in Nigeria.</p>
+					<p class="footer__text-item2">For over 4 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.</p>
+					<p class="footer__text-item3">Office: Tesmot House, 3 Abdulrahman Okene Close, off Ligali Ayorinde Street, Victoria Island, Lagos.</p>
+					<p class="footer__text-item4">0700 933 933 933 (Mon-Fri from 9am-5pm) - contact@piggyvest.com</p>
+					<p class="footer__text-item5">© 2016 - 2020 PiggyTech Global Limited - RC 1405222</p>
+				</div>
+				<nav class="footer__links">
+					<h5 class="footer__links-title">Quick Links</h5>
+					<ul>
+						<li class="footer__links-text"><a href="#">AutoSave™</a></li>
+						<li class="footer__links-text"><a href="#">PiggyLink</a></li>
+						<li class="footer__links-text"><a href="#">Quick Save™</a></li>
+						<li class="footer__links-text"><a href="#">SafeLock™</a></li>
+						<li class="footer__links-text"><a href="#">Withdrawals & Breaking</a></li>
+						<li class="footer__links-text"><a href="#">Salary Management</a></li>
+					</ul>
+				</nav>
+				<nav class="footer__company">
+					<h5 class="footer__company-links">Company</h5>
+					<ul>
+						<li class="footer__links-text"><a href="#">About</a></li>
+						<li class="footer__links-text"><a href="#">FAQ</a></li>
+						<li class="footer__links-text"><a href="#">Terms of Use</a></li>
+						<li class="footer__links-text"><a href="#">Privacy Policy</a></li>
+					</ul>
+					<div class="footer__social-icons">
+						<a href="#"><img src="img/Group.png" alt=""></a>
+						<a href="#"><img src="img/Group-1.png" alt=""></a>
+						<a href="#"><img src="img/instagram-sketched 1.png" alt=""></a>
+					</div>
+				</nav>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/calendar.js"></script>
+</body>
+</html>
