@@ -223,14 +223,14 @@ label {
 .action-button-green {
   background-color: #30C57B;
   color: white;
-  border: 0px solid #414851;
+  border: 0 solid #414851;
 }
 /* SECTION-SAVED */
 .action-button-blue {
   background-color: #144499;
 ;
   color: white;
-  border: 0px solid #414851;
+  border: 0 solid #414851;
 }
 .section-saved {
   display: flex;
@@ -255,8 +255,9 @@ label {
 /* FOOTER */
 
 .footer {
-  background: rgba(0, 136, 204, 0.04);
-  width: 100vw;
+ /* background: rgba(0, 136, 204, 0.04);*/
+  border-top: 4px solid #414851;
+  width: 95%;
   box-sizing: border-box;
   margin-left: -12vw;
   height: 310px;
@@ -313,7 +314,9 @@ label {
 
 /*Relative*/
 @media screen and (min-width: 320px) and (max-width: 767px){
+  .page{
 
+  }
 } /*- для мобильных устройств с небольшим экраном */
 @media (min-width: 768px) and (max-width: 991px){
 
