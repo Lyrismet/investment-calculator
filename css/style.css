@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/segoe-ui-4");
@@ -194,13 +193,13 @@ label {
 .action-button-green {
   background-color: #30C57B;
   color: white;
-  border: 0px solid #414851; }
+  border: 0 solid #414851; }
 
 /* SECTION-SAVED */
 .action-button-blue {
   background-color: #144499;
   color: white;
-  border: 0px solid #414851; }
+  border: 0 solid #414851; }
 
 .section-saved {
   display: flex;
@@ -214,10 +213,10 @@ label {
 
 /* FOOTER */
 .footer {
-  background: rgba(0, 136, 204, 0.04);
-  width: 100vw;
+  /* background: rgba(0, 136, 204, 0.04);*/
+  border-top: 2px solid #898FBF;
+  width: 99%;
   box-sizing: border-box;
-  margin-left: -12vw;
   height: 310px;
   display: flex;
   flex-direction: column;
@@ -254,8 +253,60 @@ label {
     width: 25vh; }
 
 /*Relative*/
-/*- для мобильных устройств с небольшим экраном */
-/* - для планшетов и других устройств среднего размера */
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .page {
+    width: 90%; }
+
+  .header {
+    flex-direction: column;
+    width: 95%;
+    margin-top: 3em; }
+
+  .header__ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    margin-top: 1.5em; }
+
+  .header__item {
+    margin-top: 1em; }
+    .header__item.action-button {
+      margin-top: 1em; }
+
+  .section-invest {
+    margin-bottom: 5em;
+    flex-direction: column; }
+    .section-invest__title {
+      width: 95%; }
+    .section-invest__form {
+      width: 95%; }
+
+  .form {
+    margin: 1em 0 -1em 0; }
+    .form__item {
+      width: 90vw;
+      margin: 0; }
+
+  .section-how__img, .section-how__text-w-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5em;
+    width: 100%; }
+  .section-how__safelock {
+    flex-direction: column;
+    align-items: center; }
+
+  .footer__section-footer {
+    min-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .footer > :last-child {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around; }
+  .footer__links {
+    margin-left: 0; } }
 @media (min-width: 1200px) {
   .header {
     /*width: 95%;*/

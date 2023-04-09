@@ -256,10 +256,9 @@ label {
 
 .footer {
  /* background: rgba(0, 136, 204, 0.04);*/
-  border-top: 4px solid #414851;
-  width: 95%;
+  border-top: 2px solid #898FBF;
+  width: 99%;
   box-sizing: border-box;
-  margin-left: -12vw;
   height: 310px;
   display: flex;
   flex-direction: column;
@@ -310,18 +309,75 @@ label {
   }
 }
 
-
-
 /*Relative*/
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 1199px){
   .page{
-
+    width: 90%;
   }
-} /*- для мобильных устройств с небольшим экраном */
-@media (min-width: 768px) and (max-width: 991px){
-
-} /* - для планшетов и других устройств среднего размера */
-@media (min-width: 992px) and (max-width: 1199px){
+  .header{
+    flex-direction: column;
+    width: 95%;
+    margin-top: 3em;
+  }
+  .header__ul{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    margin-top: 1.5em;
+  }
+  .header__item {
+    margin-top: 1em;
+    &.action-button {
+      margin-top: 1em;
+    }
+  }
+  .section-invest{
+    margin-bottom: 5em;
+    flex-direction: column;
+    &__title-w-image {
+    }
+    &__title{
+      width: 95%;
+    }
+    &__form{
+      width: 95%;
+    }
+  }
+  .form{
+    margin: 1em 0 -1em 0;
+    &__item{
+      width: 90vw;
+      margin: 0;
+    }
+  }
+.section-how{
+    &__img, &__text-w-button{
+      display: flex;
+      flex-direction: column;
+      margin-top: 2.5em;
+      width: 100%;
+    }
+    &__safelock{
+        flex-direction: column;
+      align-items: center;
+    }
+}
+  .footer{
+    &__section-footer{
+      min-width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    & > :last-child {
+      display: flex;
+      flex-flow: wrap row;
+      justify-content: space-around;
+    }
+    &__links{
+    margin-left: 0;
+    }
+  }
 
 }
 @media (min-width: 1200px){
